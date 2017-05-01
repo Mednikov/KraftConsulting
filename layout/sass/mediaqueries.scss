@@ -1,0 +1,77 @@
+@media (max-width: 1199px) {
+
+  #hero{
+    .header-bg{
+      margin-top: $margin;
+      font-size: 12px;
+      #logo{
+        top: -$margin;
+        &:hover{
+          top: -1.5*$margin;
+        }
+      }
+    }
+  }
+  #menu{
+    ul{
+      margin-left: $margin;
+      li{
+        a{
+          padding: 15px $margin;
+        }
+      }
+    }
+  }
+
+}
+
+
+
+@media (max-width: 991px) {
+
+  #hero{
+    .header-bg{
+      padding: 0;
+      #logo{
+        margin-left: $margin;
+      }
+    }
+  }
+  #menu{
+    ul{
+      margin-left: 0;
+      li{
+        a{
+          padding: 15px $margin/2;
+        }
+      }
+    }
+  }
+
+}
+
+
+
+
+@media (max-width: 767px) {
+  
+  #menu{
+    ul{
+      float: right;
+    }
+  }
+
+}
+
+
+
+
+@media (max-width: 575px) {
+  
+
+
+}
+
+
+
+

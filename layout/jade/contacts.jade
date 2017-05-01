@@ -1,0 +1,63 @@
+extends ./base.jade
+
+block title
+ .container.clearfix
+  .row
+    .col-md-12
+      ul.breadcrumbs
+        li: a(href="") Главная
+        li Контакты
+  .row
+    .col-md-12
+      h1.title Контакты
+  .contacts-content.row.light-bg
+    .col-md-8
+      .form-tab
+        ul.nav.nav-tabs.nav-justified
+          li.active: a(href="#message", data-toggle="tab") Хочу написать вам
+          li: a(href="#feedback", data-toggle="tab") Хочу оставить отзыв
+        .tab-content
+          .tab-pane.active#message
+            form
+              .row
+                .col-md-6.form-group
+                  input(type="text", placeholder="Введите ваше имя").form-control.input-lg
+                .col-md-6.form-group
+                  input(type="email", placeholder="Введите e-mail").form-control.input-lg
+              .row
+                .col-md-12.form-group
+                  textarea(rows="3", placeholder="Напишите сообщение").form-control.input-lg
+              .row
+                .col-md-12.form-group.text-center
+                  button(type="submit").btn.hvr-ripple-out Отправить
+          .tab-pane#feedback
+            form
+              .row
+                .col-md-12
+                  .alert.alert-danger Это пример формы с ошибками валидации. Сюда размещаем текст ошибки.
+              .row
+                .col-md-6.form-group.has-error
+                  input(type="text", placeholder="Введите ваше имя").form-control.input-lg
+                .col-md-6.form-group
+                  input(type="email", placeholder="Введите e-mail").form-control.input-lg
+              .row
+                .col-md-12.form-group
+                  textarea(rows="3", placeholder="Напишите сообщение").form-control.input-lg
+              .row
+                .col-md-12.form-group.text-center
+                  button(type="submit").btn.hvr-ripple-out Отправить
+    .col-md-4
+      .contacts-info
+        .contact-block
+          p.contact-title Наш адрес
+          p.contact-text Россия, г. Москва, Покровский б-р, 4/17с3
+        .contact-block
+          p.contact-title Телефон
+          p.contact-text +7 (495) 916-05-08 
+            br
+            |+7 (926) 410-31-15
+
+
+
+
+

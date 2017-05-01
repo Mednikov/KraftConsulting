@@ -1,0 +1,138 @@
+extends ./base.jade
+
+
+block title
+  #intro.container.clearfix
+    .row
+      .col-md-8.col-md-offset-2 
+        h1.title.mt-40 Победителей 
+          br
+          | не судят
+        p.mt-40 ООО «Крафт - Консалтинг» предоставляет оценочные, экспертные, юридические и другие виды консалтинговых услуг в РФ и за рубежом. Гарантируем Вам объективность и высокое качество: наши эксперты имеют многолетний опыт в своей области, что подтверждается всеми необходимыми дипломами и сертификатами.
+        a(href="").btn.hvr-ripple-out Читать о компании 
+          i.fa.fa-angle-right
+
+
+
+
+block content
+  section#services
+    .container
+      .row
+        .col-md-12
+          h2.section-heading Наши услуги
+      .row
+        .services-block.col-md-12
+          .row.clearfix
+            .services-list.col-md-4.col-sm-4.col-xs-4.left.dark-bg
+              ul
+                li
+                  a(href="") Услуги по оценке
+                li
+                  a(href="").active Аудиторские услуги
+                li
+                  a(href="") Налоговая оптимизация и ведение бухгалтерского учёта
+                li
+                  a(href="") Государственные закупки
+                li
+                  a(href="") Иммиграционные услуги
+                li
+                  a(href="") Корпоративные услуги
+                li
+                  a(href="") Операции с недвижимостью
+                li
+                  a(href="") Сопровождение процедуры банкротства
+                li
+                  a(href="") Лицензирование отдельных видов деятельности
+                li
+                  a(href="") Патентоведение
+
+            .services-content.col-md-8.col-sm-8.col-xs-8.right.text
+              h4 Аудиторские услуги
+              p В процессе развития бизнеса копятся проблемы, которые снежным комом разрастаются до таких размеров, что возможен крах всей системы предприятия. Мы осуществим анализ препятствий, тормозящих развитие Вашего бизнеса; проведем комплексную экспертизу учета и внесем изменения в финансовую политику для повышения материального качества предприятия; проведем аудит бизнеса перед его покупкой во избежание дальнейших проблем и т. д.
+              a(href="").btn.hvr-ripple-out Подробнее об услуге
+                i.fa.fa-angle-right
+
+  section#features.dark-bg
+    .container
+      .row
+        .col-md-6.col-md-offset-3
+          .row
+            .milestone.col-md-6.col-sm-6.col-xs-6
+              .fa.fa-globe
+              p Предоставим компетентного специалиста и проведем работы в любой точке мира.
+            .milestone.col-md-6.col-sm-6.col-xs-6
+              .fa.fa-users
+              p Работаем с государственными учреждениями, юридическими и физическими лицами.
+          .row
+            .milestone.col-md-6.col-sm-6.col-xs-6
+              .fa.fa-thumbs-o-up
+              p Гарантируем объективность и высокое качество предоставляемых услуг.
+            .milestone.col-md-6.col-sm-6.col-xs-6
+              .fa.fa-language
+              p При необходимости мы заговорим с Вами на одном языке.
+          .row
+            .milestone.col-md-6.col-sm-6.col-xs-6
+              .fa.fa-hourglass-half
+              p Пунктуальны, четко следуем срокам и содержанию договора.
+            .milestone.col-md-6.col-sm-6.col-xs-6
+              .fa.fa-flag
+              p Имеем представительство за рубежом.
+          .row
+            .milestone.col-md-6.col-sm-6.col-xs-6
+              .fa.fa-graduation-cap
+              p Эксперты являются опытными профессионалами в своей области.
+
+  section#newsfeed
+    .container
+      .row
+        .col-md-12
+          h2.section-heading
+            span.red Новости 
+            br
+            | компании
+      .row
+        .col-md-8.col-md-offset-4
+          .news-post
+            .news-date 08-10-2017
+            a(href="").news-title Порядок регистрации общества с ограниченной ответственностью в России
+          .news-post
+            .news-date 02-10-2017
+            a(href="").news-title Документация по трансфертному ценообразованию
+          .news-post
+            .news-date 27-04-2017
+            a(href="").news-title Годовые общие собрания участников АО и ООО
+          a(href="").btn.hvr-ripple-out Читать все новости
+                i.fa.fa-angle-right
+
+  section#feedback.dark-bg
+    .container
+      .row
+        .col-md-12
+          h2.section-heading Отзывы
+      .row
+        .col-md-8.col-md-offset-4
+          .feedback.row
+            .col-md-3.col-sm-4.col-xs-4
+              img(src="../assets/ava.jpg", alt="").feedback-userpic
+              .scroll-btns.clearfix
+                a(href="", disabled).btn.hvr-ripple-out: i.fa.fa-fw.fa-angle-left 
+                a(href="").btn.hvr-ripple-out: i.fa.fa-fw.fa-angle-right 
+            .col-md-9.col-sm-8.col-xs-8
+              p.feedback-username Александр Когановский
+              p.feedback-user-organization Генеральный директор и соучредитель ООО «КиберСофт»
+              p.feedback-text Два раза пользовались услугами компании. Один раз по поводу квартирного спора, связанного с выпиской не члена семьи и одни раз с оформлением срочной купли продажи квартиры. В суде выиграли и первый суд и аппеляцию. Документы по продаже оформили моментально. Спасибо Вам!
+              a(href="").feedback-doc 
+                i.fa.fa-file-pdf-o 
+                | Cмотреть отзыв 
+
+
+
+
+  
+      
+
+    
+
+
+    
